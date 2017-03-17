@@ -13,12 +13,12 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKey("d"))
         {
-            player1.AddForce(turnSpeed * Time.deltaTime, 0, 0);
+            player1.AddForce(turnSpeed * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         if (Input.GetKey("a"))
         {
-            player1.AddForce(-turnSpeed * Time.deltaTime, 0, 0);
+            player1.AddForce(-turnSpeed * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 	}
 }
