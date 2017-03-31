@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nl.justinbuhrmann.voetballapp.Voetbal"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:baselineAligned="true">
+
+        <RelativeLayout
+            android:id="@+id/Links"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffe5e5">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/barca"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal"
+                android:layout_marginTop="280dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/btnGoalLinks"
+                android:onClick="linksPlus"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foul"
+                android:layout_marginTop="280dp"
+                android:layout_marginStart="100dp"
+                android:id="@+id/btnOvLinks"
+                android:onClick="linksOVPlus"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goals"
+                android:layout_marginTop="110dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/scoreLinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:layout_marginTop="140dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overtredingen"
+                android:layout_marginTop="200dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/ovLinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:layout_marginTop="230dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Rechts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#e5e5ff">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal"
+                android:layout_marginTop="280dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/goalRechts"
+                android:onClick="rechtsPlus"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foul"
+                android:layout_marginTop="280dp"
+                android:layout_marginStart="100dp"
+                android:id="@+id/btnOvRechts"
+                android:onClick="rechtsOVPlus"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/madrid"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goals"
+                android:layout_marginTop="110dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/scoreRechts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:layout_marginTop="140dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overtredingen"
+                android:layout_marginTop="200dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/ovRechts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:layout_marginTop="230dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/winnaar"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="40dp"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:id="@+id/winnaarId"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="5dp"
+            android:onClick="winnaar"
+            android:text="@string/einde" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:onClick="reset"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BARCA vs MADRID</string>
+    <string name="goal">Goal</string>
+    <string name="foul">Foul</string>
+    <string name="goals">GOALS</string>
+    <string name="overtredingen">FOULS</string>
+    <string name="start">0</string>
+    <string name="winnaar">WINNER:</string>
+    <string name="reset">RESET</string>
+    <string name="einde">END</string>
+    <string name="linksWin">BARCELONA</string>
+    <string name="rechtsWin">MADRID</string>
+    <string name="gelijkSpel">DRAW</string>
+</resources>

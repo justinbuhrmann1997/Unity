@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ARSENAL vs CHELSEA</string>
+    <string name="goal">Golazo</string>
+    <string name="foul">Falta</string>
+    <string name="goals">GOLAS</string>
+    <string name="overtredingen">FALTAS</string>
+    <string name="start">0</string>
+    <string name="winnaar">GANADOR:</string>
+    <string name="reset">REINICIAR</string>
+    <string name="einde">FIN</string>
+    <string name="linksWin">ARSENAL</string>
+    <string name="rechtsWin">CHELSEA</string>
+    <string name="gelijkSpel">DIBUJAR</string>
+</resources>
